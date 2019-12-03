@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <StackPane layoutX="200.0" layoutY="93.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="progressbar0" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#onProgressbar0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@billeder/bar.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="progressbar10" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#onProgressBar10" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@billeder/bar2.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <TextField fx:id="score" layoutX="224.0" layoutY="200.0" prefWidth="152.0" text="Score" />
+      <Button layoutX="278.0" layoutY="234.0" mnemonicParsing="false" onAction="#setScore" text="Button" />
+   </children>
+</Pane>
